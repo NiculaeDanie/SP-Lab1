@@ -4,10 +4,12 @@
     {
         string Title { get; set; }
         Author Author { get; set; }
+        TableOfContents TableOfContents { get; set; }
         List<Chapter> Chapters { get; set; }
         public Book(string title)
         {
             this.Title = title;
+            TableOfContents = new TableOfContents();
             Chapters = new List<Chapter>();
         }
         public Chapter getChapter(int index)
@@ -28,6 +30,7 @@
         {
             Console.WriteLine(this.Title);
             this.Author.print();
+            this.TableOfContents.print();
             foreach(Chapter chapter in Chapters)
             {
                 chapter.print();
