@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace Domain
 {
-    internal class Table : IBookComponent
+    public class Table
     {
-        public string Content { get; set; }
+        public string title { get; set; }
 
-        public Table(string content) { Content = content; }
+        public Table(string title) { this.title = title; }
 
-        public string toString()
+        public void print()
         {
-            return this.Content;
+            Console.WriteLine(this.title);
         }
     }
 }

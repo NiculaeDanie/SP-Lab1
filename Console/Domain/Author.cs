@@ -6,15 +6,16 @@ using System.Threading.Tasks;
 
 namespace Domain
 {
-    public class Image
+    public class Author
     {
-        public string imageName { get; set; }
-
-        public Image(string imageName) { this.imageName = imageName; }
-
+        public string Name { get; set; }
+        public Author(string name)
+        {
+            Name = name;
+        }
         public void print()
         {
-            Console.WriteLine(imageName);
+            Console.WriteLine(this.Name);
         }
     }
 }

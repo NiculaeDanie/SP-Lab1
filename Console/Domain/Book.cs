@@ -3,32 +3,36 @@
     public class Book
     {
         string Title { get; set; }
-        List<IBookComponent> Content { get; set; }
+        Author Author { get; set; }
+        List<Chapter> Chapters { get; set; }
         public Book(string title)
         {
             this.Title = title;
-            this.Content = new List<IBookComponent>();
+            Chapters = new List<Chapter>();
         }
-        public void createNewParagraph(string paragraph)
+        public Chapter getChapter(int index)
         {
-            this.Content.Add(new Paragraph(paragraph));
+            return Chapters[index];
         }
-        public void createNewImage(string image)
+        public int createChapter(string title)
         {
-            this.Content.Add(new Image(image));
+            Chapter chapter = new Chapter(title);
+            Chapters.Add(chapter);
+            return Chapters.Count-1;
         }
-        public void createNewTable(string table)
+        public void addAuthor(Author author)
         {
-            this.Content.Add(new Table(table));
+            this.Author = author;
         }
         public void print()
         {
             Console.WriteLine(this.Title);
-            foreach (IBookComponent a in this.Content)
+            this.Author.print();
+            foreach(Chapter chapter in Chapters)
             {
-                Console.WriteLine(a.toString());
+                chapter.print();
             }
-
         }
+
     }
 }
