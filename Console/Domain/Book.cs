@@ -3,37 +3,36 @@
     public class Book
     {
         string Title { get; set; }
-        Author Author { get; set; }
-        TableOfContents TableOfContents { get; set; }
-        List<Chapter> Chapters { get; set; }
+        List<Author> Author { get; set; }
+        List<Element> Sections { get; set; }
         public Book(string title)
         {
             this.Title = title;
-            TableOfContents = new TableOfContents();
-            Chapters = new List<Chapter>();
+            Author = new List<Author>();
+            Sections = new List<Element>();
         }
-        public Chapter getChapter(int index)
+        public Element getSections(int index)
         {
-            return Chapters[index];
-        }
-        public int createChapter(string title)
-        {
-            Chapter chapter = new Chapter(title);
-            Chapters.Add(chapter);
-            return Chapters.Count-1;
+            return Sections[index];
         }
         public void addAuthor(Author author)
         {
-            this.Author = author;
+            this.Author.Add(author);
+        }
+        public void addContent(Element element)
+        {
+            Sections.Add(element);
         }
         public void print()
         {
             Console.WriteLine(this.Title);
-            this.Author.print();
-            this.TableOfContents.print();
-            foreach(Chapter chapter in Chapters)
+            foreach (Author author in this.Author)
             {
-                chapter.print();
+                author.print();
+            }
+            foreach(Element section in Sections)
+            {
+                section.print();
             }
         }
 

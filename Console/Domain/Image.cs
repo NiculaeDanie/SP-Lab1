@@ -6,15 +6,30 @@ using System.Threading.Tasks;
 
 namespace Domain
 {
-    public class Image
+    public class Image: Element
     {
-        public string imageName { get; set; }
+        private string imageName { get; set; }
 
         public Image(string imageName) { this.imageName = imageName; }
 
         public void print()
         {
             Console.WriteLine(imageName);
+        }
+
+        public void add(Element element)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void remove(Element element)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Element get(int index)
+        {
+            throw new NotImplementedException();
         }
     }
 }
