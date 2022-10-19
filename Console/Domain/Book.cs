@@ -1,36 +1,29 @@
 ﻿namespace Domain
 {
-    public class Book
+    public class Book: Section
     {
-        string Title { get; set; }
+        public Book(string title) : base(title)
+        {
+            this.Author=new List<Author>();
+        }
+
         List<Author> Author { get; set; }
-        List<Element> Sections { get; set; }
-        public Book(string title)
-        {
-            this.Title = title;
-            Author = new List<Author>();
-            Sections = new List<Element>();
-        }
-        public Element getSections(int index)
-        {
-            return Sections[index];
-        }
+
+        
+       
         public void addAuthor(Author author)
         {
             this.Author.Add(author);
         }
-        public void addContent(Element element)
-        {
-            Sections.Add(element);
-        }
+      
         public void print()
         {
-            Console.WriteLine(this.Title);
+            Console.WriteLine(this.title);
             foreach (Author author in this.Author)
             {
                 author.print();
             }
-            foreach(Element section in Sections)
+            foreach(Element section in this.element)
             {
                 section.print();
             }

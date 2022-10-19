@@ -8,8 +8,8 @@ namespace Domain
 {
     public class Section: Element
     {
-        private string title { get; set; }
-        private List<Element> element { get; set; }
+        protected string title { get; set; }
+        protected List<Element> element { get; set; }
         public Section(string title)
         {
             this.title = title;

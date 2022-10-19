@@ -8,13 +8,13 @@ namespace Domain
 {
     public class Image: Element
     {
-        private string imageName { get; set; }
+        private string url { get; set; }
 
-        public Image(string imageName) { this.imageName = imageName; }
+        public Image(string imageName) { this.url = imageName; }
 
         public void print()
         {
-            Console.WriteLine(imageName);
+            Console.WriteLine(url);
         }
 
         public void add(Element element)
