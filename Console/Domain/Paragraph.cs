@@ -10,11 +10,20 @@ namespace Domain
     {
         private string text { get; set; }
 
-        public Paragraph(string text) { this.text = text; }
+        public AlignStrategy alignStrategy { get; set; }
+
+        public Paragraph(string text) { this.text = text;  }
 
         public void print()
         {
-            Console.WriteLine(this.text);
+            if(this.alignStrategy != null)
+            {
+                alignStrategy.render(this.text, "context");
+            }
+            else
+            {
+                Console.WriteLine(this.text);
+            }
         }
 
         public void add(Element element)
@@ -30,6 +39,11 @@ namespace Domain
         public Element get(int index)
         {
             throw new NotImplementedException();
+        }
+
+        public void setAlignStrategy(AlignStrategy _alignStrategy)
+        {
+            this.alignStrategy = _alignStrategy;
         }
     }
 }
