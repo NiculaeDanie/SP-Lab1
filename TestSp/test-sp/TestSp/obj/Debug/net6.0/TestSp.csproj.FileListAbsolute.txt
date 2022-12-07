@@ -1,0 +1,15 @@
+C:\Users\UserW10\Desktop\TestSp\test-sp\TestSp\bin\Debug\net6.0\TestSp.exe
+C:\Users\UserW10\Desktop\TestSp\test-sp\TestSp\bin\Debug\net6.0\TestSp.deps.json
+C:\Users\UserW10\Desktop\TestSp\test-sp\TestSp\bin\Debug\net6.0\TestSp.runtimeconfig.json
+C:\Users\UserW10\Desktop\TestSp\test-sp\TestSp\bin\Debug\net6.0\TestSp.dll
+C:\Users\UserW10\Desktop\TestSp\test-sp\TestSp\bin\Debug\net6.0\TestSp.pdb
+C:\Users\UserW10\Desktop\TestSp\test-sp\TestSp\obj\Debug\net6.0\TestSp.csproj.AssemblyReference.cache
+C:\Users\UserW10\Desktop\TestSp\test-sp\TestSp\obj\Debug\net6.0\TestSp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\UserW10\Desktop\TestSp\test-sp\TestSp\obj\Debug\net6.0\TestSp.AssemblyInfoInputs.cache
+C:\Users\UserW10\Desktop\TestSp\test-sp\TestSp\obj\Debug\net6.0\TestSp.AssemblyInfo.cs
+C:\Users\UserW10\Desktop\TestSp\test-sp\TestSp\obj\Debug\net6.0\TestSp.csproj.CoreCompileInputs.cache
+C:\Users\UserW10\Desktop\TestSp\test-sp\TestSp\obj\Debug\net6.0\TestSp.dll
+C:\Users\UserW10\Desktop\TestSp\test-sp\TestSp\obj\Debug\net6.0\refint\TestSp.dll
+C:\Users\UserW10\Desktop\TestSp\test-sp\TestSp\obj\Debug\net6.0\TestSp.pdb
+C:\Users\UserW10\Desktop\TestSp\test-sp\TestSp\obj\Debug\net6.0\TestSp.genruntimeconfig.cache
+C:\Users\UserW10\Desktop\TestSp\test-sp\TestSp\obj\Debug\net6.0\ref\TestSp.dll
